@@ -1,5 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
+import ClothingsItem from './../../components/ClothingsItem'
+import './index.scss'
 
 export default class Cart extends Component {
 
@@ -11,6 +13,7 @@ export default class Cart extends Component {
         return (
             <View>
                 <Text>时装content</Text>
+                <ClothingsItem />
             </View>
         )
     }
