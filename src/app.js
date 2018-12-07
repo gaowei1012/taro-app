@@ -27,7 +27,16 @@ class App extends Component {
     pages: [
       'pages/home/index',
       'pages/cart/index',
-      'pages/user/index'
+      'pages/user/index',
+      'pages/about/index',
+      'pages/addressList/index',
+      'pages/addressUpdate/index',
+      'pages/couponList/index',
+      'pages/detail/index',
+      'pages/login/index',
+      'pages/message/index',
+      'pages/order/index',
+      'pages/size/index'
     ],
     window: {
       backgroundTextStyle: 'light',
