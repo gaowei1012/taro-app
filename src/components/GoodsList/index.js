@@ -12,6 +12,7 @@ class GoodsList extends Component {
         list: [],
     };
 
+    // 跳转到detail页面
     gotoDetail = (e) => {
         Taro.navigateTo({
             url: `/pages/detail/index?id=${e.currentTarget.dataset.id}`,

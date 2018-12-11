@@ -51,6 +51,7 @@ export default class Login extends Component {
         })
     }
 
+    // 发送验证码
     sendSms = () => {
         if (this.props.mobile == '' || this.props.mobile != 11) {
             this.showToast('请输入有效的手机号')
