@@ -1,6 +1,6 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Input, Button } from '@tarojs/components'
-import { connect } from '@tarojs/redux'
+import Taro, { Component } from '@tarojs/taro';
+import { View, Text, Input, Button } from '@tarojs/components';
+import { connect } from '@tarojs/redux';
 
 import './index.scss'
 
@@ -35,6 +35,7 @@ export default class Login extends Component {
     // 获取手机号码
     getMobile = (event) => {
         const value = event.target.value;
+        console.log(value)
         this.props.dispatch({
             type: 'login/save',
             payload: { mobile: value }
@@ -51,7 +52,7 @@ export default class Login extends Component {
     }
 
     sendSms = () => {
-        if (this.props.mobile == '' || this.props.mobile !== 11) {
+        if (this.props.mobile == '' || this.props.mobile != 11) {
             this.showToast('请输入有效的手机号')
             return false;
         }
@@ -93,16 +94,16 @@ export default class Login extends Component {
 
     // 登录
     login = () => {
-        if (this.props.mobile == '' || this.props.mobile.length !== 11 || this.props.code == '' || this.props.code.length !== 4) {
-            this.showToast('请输入有效的手机号或验证码')
+        if (this.props.mobile == '' || this.props.mobile.length != 11 || this.props.code == '' || this.props.code.length != 4) {
+            this.showToast('请输入有效的手机号或输入有效验证码！');
             return false;
         }
         this.props.dispatch({
             type: 'login/login',
             payload: {
                 code: this.props.code,
-                mobile: this.props.mobile
-            }
+                mobile: this.props.mobile,
+            },
         });
     }
 
@@ -161,10 +162,10 @@ export default class Login extends Component {
                             {this.state.sending == 0 && <View className="numberWrap" onClick={this.sendSms}>获取验证码</View>}
                         </View>
                         <Button className="button" onClick={this.login}>登录</Button></View>
-                        <View className="see-des" onClick={this.getVoiceCode}>
-                            收不到验证码？
+                    <View className="see-des" onClick={this.getVoiceCode}>
+                        收不到验证码？
                             <Text>使用语音验证码</Text>
-                        </View>
+                    </View>
                 </View>
             </View>
         )

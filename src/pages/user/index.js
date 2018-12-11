@@ -106,7 +106,7 @@ export default class User extends Component {
                             <Image className="avatar" src={avatar_img} />
                         </View>
                     </View>
-                    <View className="list">
+                    {/* <View className="list">
                         {list && list.map((item, index) => (
                             <View className="item" key={index} data-url={`/pages/order/index?type=${index}`} onClick={this.goToPage}>
                                 <Image mode="widthFix" src={item.img} />
@@ -114,7 +114,7 @@ export default class User extends Component {
                                 {item.num > 0 && <Icon className="num">{item.num}</Icon>}
                             </View>
                         ))}
-                    </View>
+                    </View> */}
                 </View>
                 <View className="login">
                     <View className="card">
