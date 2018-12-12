@@ -44,6 +44,7 @@ export default class Order extends Component {
     }
 
     toggleActiveType = (e) => {
+        console.log(e)
         this.setState({
             activeTypeIndex: e.currentTarget.dataset.type
         })
