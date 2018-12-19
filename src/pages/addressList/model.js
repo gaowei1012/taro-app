@@ -5,7 +5,6 @@ export default {
   state: {
     addressList: [],
   },
-
   effects: {
     * getAddressList(_, { call, put, select }) {
       const { access_token } = yield select(state => state.common);
@@ -18,7 +17,6 @@ export default {
       }
     },
   },
-
   reducers: {
     save(state, { payload }) {
       return { ...state, ...payload };
