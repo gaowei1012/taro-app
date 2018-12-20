@@ -1,6 +1,6 @@
 #### taro-app
 
-?> 一款基于react生态taro编写的多端商城app
+**一款基于react生态taro编写的多端商城app**
 
 #### 安装  
 
@@ -11,15 +11,16 @@
 
 ```
 
-#### 项目预览  
-?> 小程序端
+#### 项目预览   
+
+**小程序端**  
 
 ![home](/static/images/weapp/1.jpg)
 ![order](/static/iamges/weapp/2.jpg)
 ![list](/static/images/weapp/3.jpg)
-![user](/static/iamges/weapp/4.jpg)
+![user](/static/images/weapp/4.jpg)
 ![add](/static/images/weapp/5.jpg)
 ![cart](/static/images/weapp/6.jpg)
-![login](/static/iamges/weapp/7.jpg)
+![login](/static/images/weapp/7.jpg)
 
-?> h5端  
+**h5端**  
