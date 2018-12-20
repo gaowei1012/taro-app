@@ -16,7 +16,7 @@
 **小程序端**  
 
 ![home](/static/images/weapp/1.jpg)
-![order](/static/iamges/weapp/2.jpg)
+![order](/static/images/weapp/2.jpg)
 ![list](/static/images/weapp/3.jpg)
 ![user](/static/images/weapp/4.jpg)
 ![add](/static/images/weapp/5.jpg)
